@@ -308,3 +308,29 @@ color:#ff0000;
 text-decoration:underline;
 text-shadow:0 0 8px red;
 }
+
+.terminalBlock{
+
+background:#050505;
+border:1px solid #222;
+padding:15px;
+margin:15px 0;
+
+}
+
+.terminalHeader{
+
+color:#74ff74;
+font-weight:bold;
+letter-spacing:2px;
+margin-bottom:10px;
+
+}
+
+.terminalLine{
+
+font-family:Consolas,monospace;
+margin-bottom:4px;
+color:#74ff74;
+
+}
