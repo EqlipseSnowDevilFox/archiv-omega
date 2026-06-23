@@ -280,11 +280,36 @@ sections:[
 {
 title:"LOG 17",
 text:`
+
+<div class="terminalBlock">
+
+<div class="terminalHeader">
+LOG 17
+</div>
+
+<div class="terminalLine">
+> loading archive log...
+</div>
+
+<div class="terminalLine">
+[OK]
+</div>
+
+<div class="terminalLine">
 Die Akte wurde gelöscht.
+</div>
 
+<div class="terminalLine">
 Sie erscheint weiterhin.
+</div>
 
-Mehrere Versuche zur Entfernung waren erfolglos.
+<div class="terminalLine">
+Mehrere Versuche zur Entfernung
+waren erfolglos.
+</div>
+
+</div>
+
 `
 },
 
