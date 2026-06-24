@@ -284,15 +284,15 @@ text:`
 <div class="terminalBlock">
 
 <div class="terminalHeader">
-LOG 17
+ARCHIVE LOG 17
 </div>
 
 <div class="terminalLine">
-> loading archive log...
+loading archive log...
 </div>
 
 <div class="terminalLine">
-[OK]
+status ok
 </div>
 
 <div class="terminalLine">
@@ -304,16 +304,19 @@ Sie erscheint weiterhin.
 </div>
 
 <div class="terminalLine">
-Mehrere Versuche zur Entfernung
-waren erfolglos.
+Mehrere Versuche zur Entfernung waren erfolglos.
+</div>
+
+<div class="terminalLine">
+<span class="cursor">_</span>
 </div>
 
 </div>
 
 `
-},
+}
 
-{
+,{
 title:"ANHANG",
 text:`
 "Wenn Sie dies lesen können,
@@ -1029,6 +1032,13 @@ document.getElementById(
 "viewer"
 ).innerHTML = html;
 
+animateTerminal();
+document.getElementById(
+"viewer"
+).innerHTML = html;
+
+animateTerminal();
+
 document
 .querySelectorAll(".recordLink")
 .forEach(link=>{
@@ -1188,3 +1198,27 @@ target
 
 },60000);
 
+function animateTerminal(){
+
+const lines =
+
+document.querySelectorAll(
+".terminalLine"
+);
+
+lines.forEach(
+(line,index)=>{
+
+line.style.display =
+"none";
+
+setTimeout(()=>{
+
+line.style.display =
+"block";
+
+},index * 600);
+
+});
+
+}
